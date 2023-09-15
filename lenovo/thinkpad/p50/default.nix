@@ -1,6 +1,7 @@
 { lib, config, ... }: {
   imports = [
-    ../../../common/gpu/nvidia/prime.nix
+    # disabled prime since my gpu is incompatible
+    # ../../../common/gpu/nvidia/prime.nix
     ../../../common/cpu/intel
     ../../../common/pc/laptop/acpi_call.nix
     ../.
