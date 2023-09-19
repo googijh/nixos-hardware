@@ -7,7 +7,7 @@
     ../.
   ];
 
-    #hardware = {
+  hardware = {
     #nvidia = {
     #  prime = {
     #    intelBusId = lib.mkDefault "PCI:0:2:0";
