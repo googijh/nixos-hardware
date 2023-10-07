@@ -3,6 +3,8 @@
     # disabled prime since my gpu is incompatible
     # ../../../common/gpu/nvidia/prime.nix
     ../../../common/cpu/intel
+    # intel skylake build flags for Intel Core i7-6820HQ: 
+    ../../../common/cpu/intel/skylake
     ../../../common/pc/laptop/acpi_call.nix
     ../.
   ];
@@ -70,6 +72,7 @@
   # higher when running throttled than when running in the other two scenarios,
   # but still substantially under critical temp.
 
-  services.throttled.enable = lib.mkDefault true;
+  # 20231007 - testing disabled throttle 
+  services.throttled.enable = lib.mkDefault false;
 
 }
