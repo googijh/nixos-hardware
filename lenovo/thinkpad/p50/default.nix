@@ -19,7 +19,7 @@
 
     # is this too much?  It's convenient for Steam.
     opengl = {
-      driSupport = lib.mkDefault true;
+      # driSupport = lib.mkDefault true;     # since 24.11: DISABLED "The option definition `hardware.opengl.driSupport' in `/etc/nixos/configuration.nix' no longer has any effect; please remove it."
       driSupport32Bit = lib.mkDefault true;
     };
   };
